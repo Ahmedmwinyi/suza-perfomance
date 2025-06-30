@@ -228,7 +228,7 @@ export function MyEvaluation() {
               data.conduct.length) *
             20,
           overallScore: 0,
-          grade: "Inaridhisha" as const,
+          grade: "Fair" as const,
           strengths: [],
           areasForImprovement: [],
           developmentPlan: data.developmentGoals || "",
@@ -246,7 +246,7 @@ export function MyEvaluation() {
             ]
           : [],
         finalScore: 0,
-        finalGrade: "Inaridhisha" as const,
+        finalGrade: "Fair" as const,
         submittedAt: saveType === "submit" ? new Date() : undefined,
       };
 
