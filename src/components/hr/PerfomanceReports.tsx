@@ -133,7 +133,7 @@ export default function PerfomanceReports() {
                 Top Performers
               </p>
               <p className="text-2xl font-bold text-gray-900">
-                {dashboardStats.gradeDistribution["Nzuri Sana"]}
+                {dashboardStats.gradeDistribution["Very Good"]}
               </p>
               <p className="text-sm text-yellow-600">Excellent grade</p>
             </div>

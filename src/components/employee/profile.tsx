@@ -51,7 +51,7 @@ export function MyProfile() {
     },
   });
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (_data: any) => {
     setIsSubmitting(true);
     try {
       // Simulate API call

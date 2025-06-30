@@ -124,7 +124,7 @@ export function HRDashboard() {
                   fill="#8884d8"
                   dataKey="value"
                 >
-                  {gradeData.map((entry, index) => (
+                  {gradeData.map((_entry, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}

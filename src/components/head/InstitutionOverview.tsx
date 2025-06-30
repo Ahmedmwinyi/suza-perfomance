@@ -241,7 +241,7 @@ export default function InstitutionOverview() {
                   fill="#8884d8"
                   dataKey="value"
                 >
-                  {gradeData.map((entry, index) => (
+                  {gradeData.map((_entry, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}
@@ -413,9 +413,9 @@ export default function InstitutionOverview() {
               <h3 className="font-medium text-blue-900">Staff Development</h3>
             </div>
             <p className="text-sm text-blue-700">
-              {dashboardStats.gradeDistribution["Very Good"]} employees
-              achieved excellent ratings. Implement mentorship programs to
-              elevate more staff.
+              {dashboardStats.gradeDistribution["Very Good"]} employees achieved
+              excellent ratings. Implement mentorship programs to elevate more
+              staff.
             </p>
           </div>
 
