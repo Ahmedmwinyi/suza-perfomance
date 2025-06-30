@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
-  Building,
   Users,
   TrendingUp,
   Clock,
@@ -236,7 +235,7 @@ export default function DepartmentEvaluations() {
                   </td>
                   <td className="py-4">
                     <Badge
-                      variant={getStatusColor(evaluation.status) as any}
+                      variant={getStatusColor(evaluation.status)}
                       size="sm"
                     >
                       {evaluation.status.toUpperCase()}

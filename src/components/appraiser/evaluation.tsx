@@ -12,13 +12,10 @@ import {
 } from "lucide-react";
 import { Card } from "../common/Card";
 import { Badge } from "../common/Badge";
-import { useAuth } from "../../contexts/AuthContext";
 import { useEvaluation } from "../../contexts/EvaluationContenxt";
 import { format } from "date-fns";
 
 export function EmployeeEvaluations() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { user } = useAuth();
   const { evaluations } = useEvaluation();
   const [searchTerm, setSearchTerm] = useState("");
   const [filterStatus, setFilterStatus] = useState("all");

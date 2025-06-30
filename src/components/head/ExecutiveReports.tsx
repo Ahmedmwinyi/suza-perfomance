@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   FileText,
   Download,
@@ -6,7 +6,6 @@ import {
   TrendingUp,
   Users,
   Award,
-  BarChart3,
   Building,
 } from "lucide-react";
 import { Card } from "../common/Card";
@@ -143,7 +142,7 @@ export default function ExecutiveReports() {
               <div className="text-center p-4 bg-yellow-50 rounded-lg">
                 <Award className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
                 <p className="text-2xl font-bold text-yellow-900">
-                  {dashboardStats.gradeDistribution["Nzuri Sana"]}
+                  {dashboardStats.gradeDistribution["Very Good"]}
                 </p>
                 <p className="text-sm text-yellow-700">Excellence Achievers</p>
                 <p className="text-xs text-green-600 mt-1">↗ +15% YoY</p>
@@ -189,7 +188,7 @@ export default function ExecutiveReports() {
                       <li>
                         •{" "}
                         {Math.round(
-                          (dashboardStats.gradeDistribution["Nzuri Sana"] /
+                          (dashboardStats.gradeDistribution["Very Good"] /
                             dashboardStats.totalEmployees) *
                             100
                         )}
@@ -501,7 +500,7 @@ export default function ExecutiveReports() {
               <p className="text-green-800 mb-4">
                 With{" "}
                 {Math.round(
-                  (dashboardStats.gradeDistribution["Nzuri Sana"] /
+                  (dashboardStats.gradeDistribution["Very Good"] /
                     dashboardStats.totalEmployees) *
                     100
                 )}

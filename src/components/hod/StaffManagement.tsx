@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Users,
   Plus,
-  Edit,
   Search,
   Filter,
   Mail,
   Phone,
-  MapPin,
   Briefcase,
 } from "lucide-react";
 import { Card } from "../common/Card";
@@ -296,7 +294,7 @@ export default function StaffManagements() {
                   </td>
                   <td className="py-4">
                     <Badge
-                      variant={getStatusColor(staff.status) as any}
+                      variant={getStatusColor(staff.status)}
                       size="sm"
                     >
                       {staff.status.toUpperCase()}
@@ -304,7 +302,7 @@ export default function StaffManagements() {
                   </td>
                   <td className="py-4">
                     <Badge
-                      variant={getGradeColor(staff.performanceGrade) as any}
+                      variant={getGradeColor(staff.performanceGrade)}
                       size="sm"
                     >
                       {staff.performanceGrade}
@@ -373,7 +371,7 @@ export default function StaffManagements() {
                         </h3>
                         <p className="text-gray-600">{staff.position}</p>
                         <Badge
-                          variant={getStatusColor(staff.status) as any}
+                          variant={getStatusColor(staff.status)}
                           size="sm"
                         >
                           {staff.status.toUpperCase()}
@@ -430,7 +428,7 @@ export default function StaffManagements() {
                           </span>
                           <Badge
                             variant={
-                              getGradeColor(staff.performanceGrade) as any
+                              getGradeColor(staff.performanceGrade)
                             }
                           >
                             {staff.performanceGrade}

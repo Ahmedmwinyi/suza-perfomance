@@ -169,7 +169,7 @@ export default function Analytics() {
               </p>
               <p className="text-2xl font-bold text-gray-900">
                 {Math.round(
-                  (dashboardStats.gradeDistribution["Nzuri Sana"] /
+                  (dashboardStats.gradeDistribution["Very Good"] /
                     dashboardStats.totalEmployees) *
                     100
                 )}

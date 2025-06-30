@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Building,
   Users,
@@ -413,7 +413,7 @@ export default function InstitutionOverview() {
               <h3 className="font-medium text-blue-900">Staff Development</h3>
             </div>
             <p className="text-sm text-blue-700">
-              {dashboardStats.gradeDistribution["Nzuri Sana"]} employees
+              {dashboardStats.gradeDistribution["Very Good"]} employees
               achieved excellent ratings. Implement mentorship programs to
               elevate more staff.
             </p>
@@ -454,7 +454,7 @@ export default function InstitutionOverview() {
               </h4>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>
-                  • {dashboardStats.gradeDistribution["Nzuri Sana"]} employees
+                  • {dashboardStats.gradeDistribution["Very Good"]} employees
                   achieved excellent performance ratings
                 </li>
                 <li>
